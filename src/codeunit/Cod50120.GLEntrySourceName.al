@@ -1,10 +1,11 @@
 codeunit 50120 "GLEntrySourceName"
 {
+    //Extent from Code unit 12 function InitGlEntry
     [EventSubscriber(ObjectType::Codeunit, codeunit::"Gen. Jnl.-Post Line", 'OnAfterInitGLEntry', '', true, true)]
     local procedure OnAfterInitGLEntry(VAR GLEntry: Record "G/L Entry"; GenJournalLine: Record "Gen. Journal Line")
     var
-        vend: record vendor;
-        cust: record Customer;
+        Vend: record vendor;
+        Cust: record Customer;
         FixAsset: record "Fixed Asset";
         BankAcc: record "Bank Account";
     begin
