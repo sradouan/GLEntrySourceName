@@ -9,7 +9,7 @@
   "EULA": "",
   "help": "",
   "url": "",
-  "logo": "",
+  "logo": "./src/logo/icon.png",
   "capabilities": [],
   "dependencies": [],
   "screenshots": [],
